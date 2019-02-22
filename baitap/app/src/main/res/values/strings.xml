@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">baitap</string>
+    <string name="btnBack">&#60;</string>
+    <string name="btnKetThuc">KetThuc</string>
+    <string name="btnNext">&#62;</string>
+    <string name="screen1">Cau so 1</string>
+    <string name="text">noi dung cau hoi thu...</string>
+    <string name="choice">cau tra loi thu..</string>
+</resources>

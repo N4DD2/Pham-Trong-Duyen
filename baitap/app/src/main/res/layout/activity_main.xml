@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/text"
+            style="@style/txt"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/radA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            style="@style/chk1"
+            android:text="@string/choice"/>
+
+        <CheckBox
+            android:id="@+id/radB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/radA"
+            android:layout_toRightOf="@id/radA"
+            style="@style/chk2"
+            android:text="@string/choice" />
+        <CheckBox
+            android:id="@+id/radC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radA"
+            android:layout_alignLeft="@id/radA"
+            style="@style/chk2"
+            android:text="@string/choice"/>
+        <CheckBox
+            android:id="@+id/radD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radC"
+            android:layout_alignBaseline="@id/radC"
+            android:layout_alignLeft="@id/radB"
+            style="@style/chk"
+            android:text="@string/choice"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBack"
+            style="@style/btn"
+
+            />
+        <Button
+            android:id="@+id/KetThuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnKetThuc"
+            android:background="@color/Mau1"
+            style="@style/btn"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnNext"
+            style="@style/btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
